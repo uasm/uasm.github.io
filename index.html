@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Uasm-language-definition</title>
+    <title>Unified ASM Syntax Project</title>
   </head>
 
   <body>
@@ -16,23 +16,31 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/uasm/uasm-language-definition">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/uasm/">View on GitHub</a>
 
-          <h1 id="project_title">Uasm-language-definition</h1>
+          <h1 id="project_title">Unified ASM Syntax Project</h1>
           <h2 id="project_tagline"></h2>
 
-            <section id="downloads">
+<!--            <section id="downloads">
               <a class="zip_download_link" href="https://github.com/uasm/uasm-language-definition/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/uasm/uasm-language-definition/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+            </section>-->
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a id="goal-description" class="anchor" href="#goal-description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>goal description</h3>
+    <h2>Introduction</h2>
+    <p>Abstract State Machines (ASMs) are a common formal specification language. They can be described as "pseudo-code over abstract data". The main difference to e.g. finite state machines is that each state not only defines the control flow, but also the available data structures in so called "algebras". This explains the original name "evolving algebras". </p>
+
+    <p>In the book "Abstract State Machines - A Method for High-Level System Design and Analysis" by Egon Börger and Robert Stärk (2003), this method is explained in detail. Because of their closeness to mathematics, the ASM specifications make extended use of mathematical symbols. On one side, this is convenient, but on the other side, this makes it hard to write tools for ASMs. </p>
+
+    <p>While there exist several tools (ASMeta, CoreASM, KIV, AsmL [Links]), they all define their own interpretation of the (abstract) syntax defined or just used in several papers or books. This circumstance makes it very tedious to reuse an ASM model written in one tool in another. </p>
+
+    <p>Thus, the goal of the UASM-project is to define one common concrete syntax for ASMs that can (and should be) used in all tools. For the beginning, we started to combine the syntaxes of ASMeta and CoreASM. </p>
+
+    <p>The progress of this joined work between UNIBG, UMIL and UULM is documented on this homepage and the corresponding github repositories. </p>
 
 <h3>
 <a id="monthly-meeting" class="anchor" href="#monthly-meeting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>monthly meeting</h3>
